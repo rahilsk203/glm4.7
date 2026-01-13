@@ -1,0 +1,11 @@
+name = "zai-chat-worker"
+main = "worker.ts"
+compatibility_date = "2023-12-01"
+
+[env.production]
+API_KEY = "sk-test-api-key-for-development"
+
+[env.development]
+workers_dev = true
+[env.development.vars]
+API_KEY = "sk-test-api-key-for-development"
